@@ -6,7 +6,7 @@
 
 !!! Info "说明"
 
-    本课程主页为 2024 秋季学期李诚老师班《编译原理与技术》课程主页，包含了理论课与实验课的相关信息。
+    本课程主页为 2025 秋季学期李诚老师班《编译原理与技术》课程主页，包含了理论课与实验课的相关信息。
 
 <hr class="hr-my" data-content="(●′∀｀●) 我是分隔线 (●′∀｀●)">
 
@@ -24,27 +24,26 @@
 
 <strong>教师</strong>
 
-- 主讲教师：李诚 （<chengli7@ustc.edu.cn>）
+- 主讲教师：李诚（<chengli7@ustc.edu.cn>）
 
 <strong>助教</strong>
 
-  - 金泽文（<zevin@mail.ustc.edu.cn>）
-  - 贺嘉（<hej148@mail.ustc.edu.cn>）
-  - 李晓奇（<lxq@mail.ustc.edu.cn>）
-  - 李宇哲（<lyz1810@mail.ustc.edu.cn>）
-  - 周瓯翔（<zox@mail.ustc.edu.cn>）
-  - 刘睿博（<liuruibo21@mail.ustc.edu.cn>）
+  - 王宇航（<wyh2022@mail.ustc.edu.cn>）
+  - 艾琮焜（<ack@mail.ustc.edu.cn>）
+  - 杨龙成（<ylc221606@mail.ustc.edu.cn>）
+  - 孙婧雯（<sunj1ngwen@mail.ustc.edu.cn>）
+  - 朱恩松（<eszhu@mail.ustc.edu.cn>）
 
 <strong>其它</strong>
 
-- QQ 群：726310461
+- QQ 群：910418526
 <!-- - 录课视频（需校内统一身份认证）：<https://v.ustc.edu.cn/1/2024-1/capture-course/011163.02/detail> -->
 <!-- - 希冀实验平台（作业及实验提交）：<http://cscourse.ustc.edu.cn/> -->
-<!-- - 实验框架已公开，见参考资料[<sup>2</sup>](#textbook2) -->
+<!-- - 实验框架已公开，见参考资料 [<sup>2</sup>](#textbook2) -->
 
 
 ## <strong>公告</strong>
-
+<!--
 - 2024-09-02：[课程平台介绍](exp_platform_intro/README.md) 已发布
 - 2024-09-06：[Lab0](lab0/index.md) 已发布，Deadline：**2024 年 9 月 18 日**
 - 2024-09-18：第一次作业已发布，Deadline：**2024 年 9 月 20 日**
@@ -60,20 +59,22 @@
 - 2024-12-01：[Lab4](lab4/index.md) 已发布，Deadline：
     - **Phase1 : 2024 年 12 月 14 日**
     - **Phase2 : 2024 年 12 月 24 日**
+-->
 <!--
-- 2024-10-11：第三次作业：3.27、3.37、4.3、4.5、4.9（教材[<sup>1</sup>](#textbook)），Deadline：**2024 年 10 月 18 日 16:00**
+- 2024-10-11：第三次作业：3.27、3.37、4.3、4.5、4.9（教材 [<sup>1</sup>](#textbook)），Deadline：**2024 年 10 月 18 日 16:00**
 - 2024-11-01：[Lab3](lab3/index.md) 已发布，注意分阶段 Deadline
 - 2024-11-01：第四次作业已发布，Deadline：**2024 年 11 月 8 日 17:25**
-- 2024-11-14：第五次作业：4.13、4.15、5.5、6.5、6.6（教材[<sup>1</sup>](#textbook)），Deadline：**2024 年 11 月 21 日 09:00**
+- 2024-11-14：第五次作业：4.13、4.15、5.5、6.5、6.6（教材 [<sup>1</sup>](#textbook)），Deadline：**2024 年 11 月 21 日 09:00**
 - 2024-11-27：[Lab4](lab4/index.md) 已发布，Deadline：**2024 年 12 月 18 日**
-- 2024-12-08：第六次作业：7.2c、7.5、7.12、8.1e、8.2e、8.6（教材[<sup>1</sup>](#textbook)），Deadline：**2024 年 12 月 20 日 24:00**
-- 2024-12-08：第七次作业：9.1、9.2、9.3、9.15af（教材[<sup>1</sup>](#textbook)），Deadline：**2024 年 1 月 3 日 24:00**
+- 2024-12-08：第六次作业：7.2c、7.5、7.12、8.1e、8.2e、8.6（教材 [<sup>1</sup>](#textbook)），Deadline：**2024 年 12 月 20 日 24:00**
+- 2024-12-08：第七次作业：9.1、9.2、9.3、9.15af（教材 [<sup>1</sup>](#textbook)），Deadline：**2024 年 1 月 3 日 24:00**
 - 2025-01-14：[建木杯–编译原理创新实验](innovative-lab/index.md) 已发布 -->
 
 ## <strong>教学课件</strong>
 
 |    日期    |                          标题                          |                                                 课件                                                 |
 | :--------: | :----------------------------------------------------: | :--------------------------------------------------------------------------------------------------: |
+<!--
 | 2024-09-02 |                   编译原理和技术导论                   |                               [Lecture1_Intro](ppt/Lecture1-Intro.pdf)                               |
 | 2024-09-04 |                        词法分析                        |                        [Lexical-analysis](ppt/Lecture2-Lexical-analysis.pdf)                         |
 | 2024-09-11 |               语法分析 - 上下文无关文法                |                            [Parser-part1](ppt/Lecture3-Parser-part1.pdf)                             |
@@ -99,6 +100,8 @@
 | 2024-11-20 | 机器无关代码优化 - 数据流与到达定值分析  | [IR Opt-part2](ppt/Lecture27-IR%20Opt-part2.pdf)|
 | 2024-11-25 | 机器无关代码优化 - 可用表达式分析 & 活跃变量分析 & 基本块内优化             |                                       [IR Opt-part3](ppt/Lecture28-IR%20Opt-part3.pdf), [IR Opt-part4](ppt/Lecture29-IR%20Opt-part4.pdf), [IR Opt-part5](ppt/Lecture30-IR%20Opt-part5.pdf)                                       |
 | 2024-11-27 | 流图中的循环 & 寄存器分配              |                                                                              [Loop](ppt/Lecture31-Loop-part1.pdf), [Register](ppt/Lecture32-Register.pdf)                                |
+
+-->
 <!--| 2024-11-29 |                          面向目标机器的代码优化                           |                                                                              [part1](https://rec.ustc.edu.cn/share/d6169380-9045-11ee-8a37-87201671ab8d)                                                                              |
 | 2024-12-04 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
 | 2024-12-06 |                               guest lecture                               |                                                                                                               无 slides                                                                                                               |
@@ -167,7 +170,7 @@
 
     <strong>其他方式</strong>
 
-    评论系统实际上是抓取了[这个仓库](https://github.com/USTC-Compiler-2024/Compiler-Comments)下讨论区的内容，所有的评论也会发布在这里。大家可以访问上面的仓库进行阅读。
+    评论系统实际上是抓取了 [这个仓库](https://github.com/USTC-Compiler-2024/Compiler-Comments) 下讨论区的内容，所有的评论也会发布在这里。大家可以访问上面的仓库进行阅读。
 
     如果你没有或者无法登录 GitHub 账号也没关系。除了文档下方的评论系统，在课程群中大家也可以提出自己的问题，我们将统一进行解答。
 

@@ -1,4 +1,8 @@
-# Lab0 实验准备
+# Lab0 简介
+
+!!! Info "敬请期待"
+    **此实验还未发布！**
+<!--
 
 !!! warning "Deadline"
 
@@ -38,7 +42,7 @@
 
 ### 提交内容
 
-Lab0 完成后，除了 answer.pdf 文件（需要回答[Git 的使用](git.md#实验任务)和[在 CMake 构建的大型项目中如何 Debug](debug.md#实验任务)中**实验任务**一节的问题），你还在 GitLab 上拥有一个名为 2024_warm_up 的远程仓库，该仓库有以下结构：
+Lab0 完成后，除了 answer.pdf 文件（需要回答 [Git 的使用](git.md#实验任务)和[在 CMake 构建的大型项目中如何 Debug](debug.md#实验任务)中**实验任务**一节的问题），你还在 GitLab 上拥有一个名为 2024_warm_up 的远程仓库，该仓库有以下结构：
 
 ```shell
 2024_warm_up_b:
@@ -51,7 +55,10 @@ Lab0 完成后，除了 answer.pdf 文件（需要回答[Git 的使用](git.md#�
 
 #### 文件上传提交方式
 
+-->
+
 <!-- 目前还没有开放提交 -->
+<!--
 
 对于上传的文件，助教会进行文本相似性检测，请同学们认真学习并完成要求。
 
@@ -63,7 +70,12 @@ Lab0 完成后，除了 answer.pdf 文件（需要回答[Git 的使用](git.md#�
 
 ![Alt text](photos/image-2.png)
 
+-->
+
+
 <!-- #### 答疑
 
 同学们如果对实验有什么疑问，请先登录希冀平台后在 [在线答疑模块](https://cscourse.ustc.edu.cn/forum/forum.jsp?forum=121) 发帖询问，助教看到帖子会及时回复。
 ![Alt text](photos/image_3.png) -->
+
+
