@@ -25,7 +25,7 @@
 首先将本仓库的内容从 GitHub clone 到本地。在你选定的本地路径下运行
 
 ```
-git clone https://github.com/USTC-Compiler-2024/HomePage
+git clone https://github.com/USTC-Compiler-2025/HomePage
 ```
 
 即可。clone 完成后进入 HomePage 目录，该目录即为我们的项目根目录。
@@ -253,6 +253,6 @@ mkdocs gh-deploy -b cur_page
 目前的分支包括
 
 - `main`：主分支。包含全部的开发内容
-- `gh-pages`：网页分支。这是部署在 `[github.io](https://ustc-compiler-2024.github.io/HomePage/)` 上的界面，包含不完全开发的实验教程。**每次实验的练习部分在实验发布时才放出。**
+- `gh-pages`：网页分支。这是部署在 `[github.io](https://ustc-compiler-2025.github.io/HomePage/)` 上的界面，包含不完全开发的实验教程。**每次实验的练习部分在实验发布时才放出。**
 
 

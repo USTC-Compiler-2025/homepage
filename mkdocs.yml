@@ -1,6 +1,6 @@
 site_name: USTC 编译原理和技术 2025
-# repo_name: USTC-Compiler-2024/HomePage
-# repo_url: https://github.com/USTC-Compiler-2024/HomePage
+# repo_name: USTC-Compiler-2025/HomePage
+# repo_url: https://github.com/USTC-Compiler-2025/HomePage
 
 theme:
   custom_dir: overrides
