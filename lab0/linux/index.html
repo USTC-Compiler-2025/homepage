@@ -1074,6 +1074,11 @@
 <p>如果在配置环境的时候出现问题，请联系助教。</p>
 <p>下面将介绍两款常见的虚拟机管理软件：<strong>VirtualBox</strong>、<strong>VMWare</strong>，任选其一即可！</p>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">重要</p>
+<p>WSL 与部分版本的 VirtualBox 和 VMWare 不兼容，可能会导致后二者不能正常运行。如果你已经安装了 WSL，可以直接使用 WSL。</p>
+<p>本实验在 WSL 2.0 Ubuntu 22.04.5 上测试通过。</p>
+</div>
 <h2 id="1-virtual-box">1 Virtual Box<a class="headerlink" href="#1-virtual-box" title="Permanent link">¶</a></h2>
 <p>下面以虚拟机软件 VirtualBox 为例介绍搭建环境的方法。</p>
 <h3 id="11-下载">1.1 下载<a class="headerlink" href="#11-下载" title="Permanent link">¶</a></h3>
@@ -1092,7 +1097,7 @@
 <p class="admonition-title">重要</p>
 <p>本学期实验规定了相应的 Ubuntu 版本以方便后续软件的下载与使用，请各位同学 <strong>务必</strong> 下载使用推荐版本 <strong>22.04</strong>。</p>
 </div>
-<p>镜像文件请下载 <strong>server</strong> 版本，后续指导基于 server 版本展开。请下载命名为 ubuntu-22.04.4-live-server-amd64 的镜像文件。</p>
+<p>镜像文件请下载 <strong>server</strong> 版本，后续指导基于 server 版本展开。请下载命名为 ubuntu-22.04.4-live-server-amd64（或 22.04.5） 的镜像文件。</p>
 <p>下载完成之后无需打开镜像文件，只需在后续导入虚拟机软件即可。</p>
 <h3 id="12-创建安装虚拟机virtualbox">1.2 创建、安装虚拟机（VirtualBox）<a class="headerlink" href="#12-创建安装虚拟机virtualbox" title="Permanent link">¶</a></h3>
 <p>下面介绍 VirtualBox 创建、安装虚拟机的过程。</p>
@@ -1290,7 +1295,7 @@ Hello<span class="w"> </span>VirtualBox!
 <p>虚拟机软件的版本没有规定的要求，但必须满足基本需求。</p>
 <p>下载 Ubuntu：</p>
 <p>(x86)</p>
-<p>请下载命名为 ubuntu-22.04.4-live-server-amd64 的镜像文件</p>
+<p>请下载命名为 ubuntu-22.04.4-live-server-amd64（或 22.04.5） 的镜像文件</p>
 <ul>
 <li>官网链接：<a href="https://releases.ubuntu.com/">Ubuntu Releases</a></li>
 <li>科大镜像：<a href="https://mirrors.ustc.edu.cn/ubuntu-releases/">Index of /ubuntu-releases/ (ustc.edu.cn)</a></li>
@@ -1298,10 +1303,10 @@ Hello<span class="w"> </span>VirtualBox!
 </ul>
 <hr>
 <p>(arm)</p>
-<p>请下载命名为 ubuntu-22.04.4-live-server-arm64 的镜像文件</p>
+<p>请下载命名为 ubuntu-22.04.5-live-server-arm64 的镜像文件</p>
 <ul>
-<li>科大镜像：<a href="https://mirrors.ustc.edu.cn/ubuntu-cdimage/releases/22.04.4/release/">Index of /ubuntu-releases/ (ustc.edu.cn)</a></li>
-<li>清华镜像：<a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/releases/22.04.4/release/">Index of /ubuntu-releases/ | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></li>
+<li>科大镜像：<a href="https://mirrors.ustc.edu.cn/ubuntu-cdimage/releases/22.04.5/release/">Index of /ubuntu-releases/ (ustc.edu.cn)</a></li>
+<li>清华镜像：<a href="https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/releases/22.04.5/release/">Index of /ubuntu-releases/ | 清华大学开源软件镜像站 | Tsinghua Open Source Mirror</a></li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">重要</p>
@@ -1377,7 +1382,7 @@ Host vbox
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"></path></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年9月8日 04:04:26 UTC">2025年9月8日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年9月13日 15:33:09 UTC">2025年9月13日</span>
   </span>
 
     
@@ -1388,12 +1393,13 @@ Host vbox
   <span class="md-source-file__fact">
     <span class="md-icon" title="贡献者">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"></path></svg>
       
     </span>
     <nav>
       
-        <a href="mailto:153092435+terialion@users.noreply.github.com">WangYuhang</a>
+        <a href="mailto:153092435+terialion@users.noreply.github.com">WangYuhang</a>, 
+        <a href="mailto:ylc221606@mail.ustc.edu.cn">Yang</a>
     </nav>
   </span>
 
