@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../claude/">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Light IR 预热 - USTC 编译原理和技术 2026</title>
+        <title>DeepSeek Harness - USTC 编译原理和技术 2026</title>
       
     
     
@@ -85,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#light-ir-预热" class="md-skip">
+        <a href="#deepseek-harness-dsh" class="md-skip">
           跳转至
         </a>
       
@@ -121,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Light IR 预热
+              DeepSeek Harness
             
           </span>
         </div>
@@ -243,11 +245,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../aitools/npm/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../npm/" class="md-tabs__link">
           
   
   AI 工具配置
@@ -389,25 +393,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -418,7 +425,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             AI 工具配置
@@ -432,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aitools/npm/" class="md-nav__link">
+      <a href="../npm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -453,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aitools/codex/" class="md-nav__link">
+      <a href="../codex/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aitools/claude/" class="md-nav__link">
+      <a href="../claude/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -492,10 +499,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../aitools/deepseek_harness/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    DeepSeek Harness
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -504,6 +531,104 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#前置条件" class="md-nav__link">
+    <span class="md-ellipsis">
+      前置条件
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#启动-dsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动 dsh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#首次配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      首次配置
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#常用操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常用操作">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#指定端口" class="md-nav__link">
+    <span class="md-ellipsis">
+      指定端口
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#查看配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      查看配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#从源码运行" class="md-nav__link">
+    <span class="md-ellipsis">
+      从源码运行
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#官方资料" class="md-nav__link">
+    <span class="md-ellipsis">
+      官方资料
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -543,28 +668,64 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#ir-介绍" class="md-nav__link">
+  <a href="#前置条件" class="md-nav__link">
     <span class="md-ellipsis">
-      IR 介绍
+      前置条件
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="IR 介绍">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#启动-dsh" class="md-nav__link">
+    <span class="md-ellipsis">
+      启动 dsh
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#首次配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      首次配置
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#常用操作" class="md-nav__link">
+    <span class="md-ellipsis">
+      常用操作
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="常用操作">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#llvm-ir" class="md-nav__link">
+  <a href="#指定端口" class="md-nav__link">
     <span class="md-ellipsis">
-      LLVM IR
+      指定端口
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#light-ir" class="md-nav__link">
+  <a href="#查看配置" class="md-nav__link">
     <span class="md-ellipsis">
-      Light IR
+      查看配置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#从源码运行" class="md-nav__link">
+    <span class="md-ellipsis">
+      从源码运行
     </span>
   </a>
   
@@ -576,93 +737,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#task-1手工编写-ir-文件" class="md-nav__link">
+  <a href="#官方资料" class="md-nav__link">
     <span class="md-ellipsis">
-      Task 1：手工编写 IR 文件
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Task 1：手工编写 IR 文件">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#实验内容" class="md-nav__link">
-    <span class="md-ellipsis">
-      实验内容
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#运行测试" class="md-nav__link">
-    <span class="md-ellipsis">
-      运行、测试
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#task-2使用-c-库生成-ir-文件" class="md-nav__link">
-    <span class="md-ellipsis">
-      Task 2：使用 C++ 库生成 IR 文件
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Task 2：使用 C++ 库生成 IR 文件">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#light-ir-c-库介绍" class="md-nav__link">
-    <span class="md-ellipsis">
-      Light IR C++ 库介绍
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#使用-light-ir-c-库生成-ir-示例" class="md-nav__link">
-    <span class="md-ellipsis">
-      使用 Light IR C++ 库生成 IR 示例
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#实验内容_1" class="md-nav__link">
-    <span class="md-ellipsis">
-      实验内容
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#编译运行测试" class="md-nav__link">
-    <span class="md-ellipsis">
-      编译、运行、测试
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#思考题" class="md-nav__link">
-    <span class="md-ellipsis">
-      思考题
+      官方资料
     </span>
   </a>
   
@@ -683,106 +760,57 @@
                   
 
 
-<h1 id="light-ir-预热">Light IR 预热<a class="headerlink" href="#light-ir-预热" title="Permanent link">&para;</a></h1>
-<p>本阶段实验需要完成以下两部分</p>
+<h1 id="deepseek-harness-dsh">DeepSeek Harness (dsh)<a class="headerlink" href="#deepseek-harness-dsh" title="Permanent link">&para;</a></h1>
+<p>DeepSeek Harness（简称 <code>dsh</code>）是 DeepSeek 开源的 AI Agent 运行环境。它通过 Web UI 在项目目录中协助阅读和修改代码、执行命令、维护任务计划。</p>
+<h2 id="前置条件">前置条件<a class="headerlink" href="#前置条件" title="Permanent link">&para;</a></h2>
+<p>请先完成 <a href="../npm/">npm 环境配置</a>，并确认 Node.js 可用：</p>
+<div class="highlight"><pre><span></span><code>node<span class="w"> </span>--version
+npx<span class="w"> </span>--version
+</code></pre></div>
+<h2 id="启动-dsh">启动 dsh<a class="headerlink" href="#启动-dsh" title="Permanent link">&para;</a></h2>
+<p>进入需要处理的项目目录，执行以下命令：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>your-project
+npx<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web
+</code></pre></div>
+<p>首次运行时，<code>npx</code> 会下载并启动 dsh。启动成功后，终端会输出本地访问地址；默认地址为 <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>，并会尝试在浏览器中打开它。</p>
+<p>若只希望启动服务、不自动打开浏览器，可以使用：</p>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web<span class="w"> </span>--no-open
+</code></pre></div>
+<h2 id="首次配置">首次配置<a class="headerlink" href="#首次配置" title="Permanent link">&para;</a></h2>
 <ol>
-<li>
-<p>阅读 <a href="../LightIR/">Light IR 手册</a>，了解 LLVM IR 与 Light IR 关系，认识 Light IR 的结构及指令语法。在 clang 翻译出的 IR 作为参考下，手动编写 IR 文件。</p>
-</li>
-<li>
-<p>了解并掌握 <a href="../LightIR%20C%2B%2B/">Light IR C++ 库</a>的使用方法，通过调用 Light IR C++ 库提供的接口生成 IR 文件。</p>
-</li>
+<li>在浏览器中打开终端输出的 dsh 地址。</li>
+<li>打开 <strong>Settings → Models</strong>，填写 DeepSeek API key 并保存（可在 DeepSeek 官网购买）。</li>
+<li>选择 <strong>Choose workspace</strong>，添加并选中当前项目目录。</li>
+<li>创建会话后输入任务，例如：</li>
 </ol>
-<p>与 Light IR 预热实验相关文件如下：</p>
-<div class="highlight"><pre><span></span><code>.
-├── ...
-├── include
-│   ├── common
-│   └── lightir/*
-└── tests
-    ├── ...
-    └── 2-ir-gen
-        └── warmup
-            ├── CMakeLists.txt
-            ├── c_cases           &lt;- 需要翻译的 c 代码
-            ├── calculator        &lt;- 助教编写的计算器示例
-            ├── stu_ll            &lt;- 学生需要手动编写的 .ll 代码   （Task 1）
-            ├── stu_cpp           &lt;- 学生需要编写的 .ll 代码生成器 （Task 2）
-            └── ta_gcd            &lt;- 助教编写的 .ll 代码手动生成器示例
+<div class="highlight"><pre><span></span><code>阅读这个仓库，说明各目录的作用，并找出当前未通过的测试。
 </code></pre></div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>我们已经创建了 <code>stu_ll</code> 与 <code>stu_cpp</code> 目录下的相应空文件，请不要修改文件名！否则希冀平台的测试将会失败。</p>
-</div>
-<h2 id="ir-介绍">IR 介绍<a class="headerlink" href="#ir-介绍" title="Permanent link">&para;</a></h2>
-<h3 id="llvm-ir">LLVM IR<a class="headerlink" href="#llvm-ir" title="Permanent link">&para;</a></h3>
-<p>根据<a href="https://zh.wikipedia.org/zh-cn/LLVM">维基百科</a>的介绍，LLVM 是一个自由软件项目，它是一种编译器基础设施，以 C++ 写成，包含一系列模块化的编译器组件和工具链，用来开发编译器前端和后端。IR 的全称是 Intermediate Representation，即中间表示。LLVM IR 是 LLVM 项目定义的编译器中间代码。</p>
-<p>LLVM IR 指令参考手册：<a href="https://llvm.org/docs/LangRef.html">Reference Manual</a></p>
-<details class="note" open="open">
-<summary>使用 clang 生成 LLVM IR 并利用 lli 运行</summary>
-<p><span id='clang-gen-llvm-ir'></span> LLVM 相关软件，我们已经在<a href="../../lab0/software/#llvmclang-安装"> lab0 阶段</a>安装好。</p>
-<p>LLVM IR 文件以 <code>.ll</code> 为文件后缀，clang 是 LLVM 工具链中的前端，可实现从 C 语言向 LLVM IR 的翻译，操作流程如下：</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># 可用 clang 生成 C 代码对应的 .ll 文件</span>
-$<span class="w"> </span>clang<span class="w"> </span>-S<span class="w"> </span>-emit-llvm<span class="w"> </span>gcd_array.c
-<span class="c1"># lli 可用来执行 .ll 文件</span>
-$<span class="w"> </span>lli<span class="w"> </span>gcd_array.ll
-<span class="c1"># `$?` 的内容是上一条命令所返回的结果，而 `echo $?` 可以将其输出到终端中</span>
-$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
+<p>配置完成后，dsh 可以立即使用模型，无需重新启动服务。执行过程中请阅读其提出的命令和文件修改请求，再决定是否批准。</p>
+<h2 id="常用操作">常用操作<a class="headerlink" href="#常用操作" title="Permanent link">&para;</a></h2>
+<h3 id="指定端口">指定端口<a class="headerlink" href="#指定端口" title="Permanent link">&para;</a></h3>
+<p>默认端口被占用时，指定其他端口：</p>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web<span class="w"> </span>--port<span class="w"> </span><span class="m">8080</span>
 </code></pre></div>
-</details>
-<p><a href="https://cscourse.ustc.edu.cn/vdir/Gitlab/compiler_staff/2025ustc-jianmu-compiler/-/blob/main/tests/2-ir-gen/warmup/ta_gcd/gcd_array.c">gcd_array.c</a> 是实验提供的例子，学生可以通过使用 clang 翻译示例，并查阅 <a href="../LightIR/#light-ir-指令">Light IR 手册</a>来理解每条 LLVM IR 指令含义，在 <code>tests/2-ir-gen/warmup/ta_gcd</code> 目录中，助教也提供了翻译后的示例去除大部分 LLVM 复杂修饰符后的 Light IR 版本。</p>
-<h3 id="light-ir">Light IR<a class="headerlink" href="#light-ir" title="Permanent link">&para;</a></h3>
-<p>LLVM IR 的目标是成为一种通用 IR（支持包括动态与静态语言），因此 IR 指令种类较为复杂繁多。本课程从 LLVM IR 中裁剪出了适用于教学的精简的 IR 子集，并将其命名为 Light IR。</p>
-<p>Light IR 指令参考手册：<a href="../LightIR/">Light IR 手册</a></p>
-<h2 id="task-1手工编写-ir-文件">Task 1：手工编写 IR 文件<a class="headerlink" href="#task-1手工编写-ir-文件" title="Permanent link">&para;</a></h2>
-<h3 id="实验内容">实验内容<a class="headerlink" href="#实验内容" title="Permanent link">&para;</a></h3>
-<p>实验在 <code>tests/2-ir-gen/warmup/c_cases/</code> 目录下提供了四个 C 程序：</p>
+<p>然后在浏览器中打开终端输出的完整地址。</p>
+<h3 id="查看配置">查看配置<a class="headerlink" href="#查看配置" title="Permanent link">&para;</a></h3>
+<p>当页面无法启动或插件配置出现问题时，可输出当前配置进行排查：</p>
+<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web<span class="w"> </span>--dump-config
+</code></pre></div>
+<h3 id="从源码运行">从源码运行<a class="headerlink" href="#从源码运行" title="Permanent link">&para;</a></h3>
+<p>需要修改 dsh 本身或参与开发时，使用源码方式运行：</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/deepseek-ai/deepseek-harness.git
+<span class="nb">cd</span><span class="w"> </span>deepseek-harness
+pnpm<span class="w"> </span>install
+pnpm<span class="w"> </span>run<span class="w"> </span>build
+pnpm<span class="w"> </span>dsh<span class="w"> </span>web
+</code></pre></div>
+<p>此方式额外需要安装 <code>git</code> 和 <code>pnpm</code>。普通使用不需要克隆源码。</p>
+<h2 id="官方资料">官方资料<a class="headerlink" href="#官方资料" title="Permanent link">&para;</a></h2>
 <ul>
-<li><code>assign.c</code></li>
-<li><code>fun.c</code></li>
-<li><code>if.c</code></li>
-<li><code>while.c</code></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness">DeepSeek Harness 官方仓库</a></li>
+<li><a href="https://deepseek-harness.github.io/deepseek-harness/">DeepSeek Harness 官方文档</a></li>
+<li><a href="https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/user/guide/index.md">Web UI 使用指南</a></li>
 </ul>
-<p>学生需要在 <code>test/2-ir-gen/warmup/stu_ll</code> 目录中，手动将这四个 C 程序翻译成 IR 代码，得到 <code>assign_hand.ll</code>、<code>func_hand.ll</code>、<code>if_hand.ll</code> 和 <code>while_hand.ll</code>，可参考 <code>tests/2-ir-gen/warmup/ta_gcd</code> 路径下助教给的手工翻译示例，也可以参考 <code>clang -S -emit-llvm</code> 的输出。</p>
-<h3 id="运行测试">运行、测试<a class="headerlink" href="#运行测试" title="Permanent link">&para;</a></h3>
-<p>我们主要通过 lli 运行 <code>tests/2-ir-gen/warmup/stu_ll</code> 目录下四个.ll 文件，并通过检查返回值来判断 .ll 文件的正确性。</p>
-<p>关于 .ll 文件的运行与测试，请参考<a href="./#clang-gen-llvm-ir">这里</a>。</p>
-<h2 id="task-2使用-c-库生成-ir-文件">Task 2：使用 C++ 库生成 IR 文件<a class="headerlink" href="#task-2使用-c-库生成-ir-文件" title="Permanent link">&para;</a></h2>
-<h3 id="light-ir-c-库介绍">Light IR C++ 库介绍<a class="headerlink" href="#light-ir-c-库介绍" title="Permanent link">&para;</a></h3>
-<p>LLVM 项目提供了辅助 IR 生成的 C++ 库，但其类继承关系过于复杂，并且存在很多为了编译性能的额外设计，不利于学生理解 IR 抽象。因此实验依据 LLVM 的设计，为 Light IR 提供了配套简化的 C++ 库。与 LLVM IR C++ 库相比，Light IR C++ 库仅保留必要的核心类，简化了核心类的继承关系与成员设计，且给学生提供与 LLVM 相同的生成 IR 的接口。</p>
-<p>Light IR IR C++ 库参考手册：<a href="../LightIR%20C%2B%2B/">Light IR cpp APIs</a></p>
-<h3 id="使用-light-ir-c-库生成-ir-示例">使用 Light IR C++ 库生成 IR 示例<a class="headerlink" href="#使用-light-ir-c-库生成-ir-示例" title="Permanent link">&para;</a></h3>
-<p>阅读样例 <a href="https://cscourse.ustc.edu.cn/vdir/Gitlab/compiler_staff/2025ustc-jianmu-compiler/-/blob/main/tests/2-ir-gen/warmup/ta_gcd/gcd_array.c">gcd_array.c</a>, <a href="https://cscourse.ustc.edu.cn/vdir/Gitlab/compiler_staff/2025ustc-jianmu-compiler/-/blob/main/tests/2-ir-gen/warmup/ta_gcd/gcd_array_generator.cpp">gcd_array_generator.cpp</a>。结合该样例的注释与 <a href="../LightIR%20C%2B%2B/">Light IR C++ 库</a>章节，掌握使用 Light IR C++ 库生成 IR 的方法</p>
-<h3 id="实验内容_1">实验内容<a class="headerlink" href="#实验内容_1" title="Permanent link">&para;</a></h3>
-<p>实验在 <code>tests/2-ir-gen/warmup/c_cases/</code> 目录下提供了四个 C 程序。学生需要在 <code>tests/2-ir-gen/warmup/stu_cpp/</code> 目录中，参考上面提供的 <code>gcd_array_generator.cpp</code> 样例，使用 Light IR C++ 库，编写 <code>assign_generator.cpp</code>、<code>fun_generator.cpp</code>、<code>if_generator.cpp</code> 和 <code>while_generator.cpp</code> 四个 cpp 程序。这四个程序运行后应该能够生成 <code>tests/2-ir-gen/warmup/c_cases/</code> 目录下四个 C 程序对应的 .ll 文件。</p>
-<h3 id="编译运行测试">编译、运行、测试<a class="headerlink" href="#编译运行测试" title="Permanent link">&para;</a></h3>
-<div class="admonition note">
-<p class="admonition-title">ZLIB 相关报错</p>
-<p>如果你在 <code>cmake ..</code> 一步遇到如下报错<code>Target "IR_lib" links to target "ZLIB::ZLIB" but the target was not found.</code>，请使用 <code>sudo apt install zlib1g-dev</code> 安装 zlib 库，然后重新 <code>cmake .. &amp;&amp; make</code>。</p>
-</div>
-<p><strong>编译</strong></p>
-<div class="highlight"><pre><span></span><code>$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>2025ustc-jianmu-compiler
-$<span class="w"> </span>mkdir<span class="w"> </span>build
-$<span class="w"> </span><span class="nb">cd</span><span class="w"> </span>build
-<span class="c1"># 使用 cmake 生成 makefile 等文件</span>
-$<span class="w"> </span>cmake<span class="w"> </span>..
-<span class="c1"># 使用 make 进行编译</span>
-$<span class="w"> </span>make
-</code></pre></div>
-<p>如果构建成功，你会在 <code>build</code> 文件夹下找到 <code>gcd_array_generator</code>, <code>stu_assign_generator</code> 等可执行文件。</p>
-<p><strong>运行与测试</strong></p>
-<div class="highlight"><pre><span></span><code><span class="c1"># 在 build 目录下操作</span>
-$<span class="w"> </span>./gcd_array_generator<span class="w"> </span>&gt;<span class="w"> </span>gcd_array_generator.ll
-$<span class="w"> </span>lli<span class="w"> </span>gcd_array_generator.ll
-$<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="nv">$?</span>
-</code></pre></div>
-<p>你可以通过观察原来的 C++ 代码来推断 <code>echo $?</code> 应该返回的正确结果，也可以通过 <code>clang -S -emit-llvm</code> 编译 <code>tests/2-ir-gen/warmup/c_cases</code> 目录下 4 个 CPP 文件获得 4 个相应的 .ll 文件，再用 <code>lli</code> 执行 .ll 文件来获取正确结果。</p>
-<h2 id="思考题">思考题<a class="headerlink" href="#思考题" title="Permanent link">&para;</a></h2>
-<ol>
-<li>在 <a href="../LightIR/">Light IR 手册</a>里，你已经了解了 IR 代码的基本结构，请尝试编写一个有全局变量的 cminus 程序，并用 <code>clang</code> 编译生成中间代码，解释全局变量在其中的位置。</li>
-<li>Light IR 中基本类型 label 在 Light IR C++ 库中是如何用类表示的？</li>
-<li>Light IR C++ 库中 <code>Module</code> 类中对基本类型与组合类型存储的方式是一样的吗？请尝试解释组合类型使用其存储方式的原因。</li>
-</ol>
 
 
 
@@ -803,7 +831,7 @@ $<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><sp
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 10, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 10, 2026</span>
   </span>
 
     
@@ -814,14 +842,12 @@ $<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><sp
   <span class="md-source-file__fact">
     <span class="md-icon" title="贡献者">
       
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
       
     </span>
     <nav>
       
-        <a href="mailto:119509559+shirakawasanae@users.noreply.github.com">Jingwen Sun</a>, 
-        <a href="mailto:153092435+terialion@users.noreply.github.com">WangYuhang</a>, 
-        <a href="mailto:ylc221606@mail.ustc.edu.cn">Yang00002</a>
+        <a href="mailto:ack@mail.ustc.edu.cn">T2026103582011170</a>
     </nav>
   </span>
 
@@ -845,6 +871,28 @@ $<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><sp
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../claude/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Claude Code">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                Claude Code
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
