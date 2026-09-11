@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../codex/">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>栈式分配介绍 - USTC 编译原理和技术 2026</title>
+        <title>OpenCode - USTC 编译原理和技术 2026</title>
       
     
     
@@ -85,7 +87,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#栈式分配介绍" class="md-skip">
+        <a href="#opencode" class="md-skip">
           跳转至
         </a>
       
@@ -121,7 +123,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              栈式分配介绍
+              OpenCode
             
           </span>
         </div>
@@ -243,11 +245,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../aitools/npm/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../npm/" class="md-tabs__link">
           
   
   AI 工具配置
@@ -389,25 +393,28 @@
       
   
   
+    
   
   
+  
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
-        
-          
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -418,7 +425,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
             AI 工具配置
@@ -432,7 +439,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aitools/npm/" class="md-nav__link">
+      <a href="../npm/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -453,7 +460,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aitools/deepseek_harness/" class="md-nav__link">
+      <a href="../deepseek_harness/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -474,7 +481,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aitools/claude/" class="md-nav__link">
+      <a href="../claude/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -495,7 +502,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../aitools/codex/" class="md-nav__link">
+      <a href="../codex/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -513,10 +520,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../aitools/opencode/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    OpenCode
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -525,6 +552,95 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#安装" class="md-nav__link">
+    <span class="md-ellipsis">
+      安装
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windowspowershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows（PowerShell）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxubuntu-debianbash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux（Ubuntu / Debian，Bash）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#验证安装" class="md-nav__link">
+    <span class="md-ellipsis">
+      验证安装
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#首次启动与模型配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      首次启动与模型配置
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#更新" class="md-nav__link">
+    <span class="md-ellipsis">
+      更新
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#官方资料" class="md-nav__link">
+    <span class="md-ellipsis">
+      官方资料
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -564,27 +680,69 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#核心思想" class="md-nav__link">
+  <a href="#安装" class="md-nav__link">
     <span class="md-ellipsis">
-      核心思想
+      安装
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="安装">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#windowspowershell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Windows（PowerShell）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#linuxubuntu-debianbash" class="md-nav__link">
+    <span class="md-ellipsis">
+      Linux（Ubuntu / Debian，Bash）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#验证安装" class="md-nav__link">
+    <span class="md-ellipsis">
+      验证安装
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#实验方案" class="md-nav__link">
+  <a href="#首次启动与模型配置" class="md-nav__link">
     <span class="md-ellipsis">
-      实验方案
+      首次启动与模型配置
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#举个例子" class="md-nav__link">
+  <a href="#更新" class="md-nav__link">
     <span class="md-ellipsis">
-      举个例子
+      更新
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#官方资料" class="md-nav__link">
+    <span class="md-ellipsis">
+      官方资料
     </span>
   </a>
   
@@ -605,139 +763,64 @@
                   
 
 
-<h1 id="栈式分配介绍">栈式分配介绍<a class="headerlink" href="#栈式分配介绍" title="Permanent link">&para;</a></h1>
-<div class="admonition warning">
-<p class="admonition-title">勘误</p>
-<p>Lab3 栈式分配，由于实验没有对齐需求，框架中栈上给每个 <code>i1</code> 分配空间的是 <strong>1</strong> 字节而非 <strong>4</strong> 字节，在作业与考试中也认为 <code>i1</code> 占 <strong>1</strong> 字节空间（实验代码无需更改）。</p>
+<h1 id="opencode">OpenCode<a class="headerlink" href="#opencode" title="Permanent link">&para;</a></h1>
+<p>OpenCode 是开源的终端 AI 编程工具，可以在项目目录中阅读和修改代码、执行命令，并通过不同模型提供商的 API 完成任务。</p>
+<h2 id="安装">安装<a class="headerlink" href="#安装" title="Permanent link">&para;</a></h2>
+<p>请先完成 <a href="../npm/">npm 环境配置</a>。OpenCode 官方建议 Windows 用户优先在 WSL 中使用；也可直接在 Windows PowerShell 中通过 npm 安装。</p>
+<h3 id="windowspowershell">Windows（PowerShell）<a class="headerlink" href="#windowspowershell" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="n">npm</span> <span class="n">install</span> <span class="n">-g</span> <span class="n">opencode-ai</span>
+</code></pre></div>
+<p>可用镜像站：</p>
+<div class="highlight"><pre><span></span><code><span class="n">npm</span> <span class="n">install</span> <span class="n">-g</span> <span class="n">opencode-ai</span> <span class="p">-</span><span class="n">-registry</span><span class="p">=</span><span class="n">https</span><span class="p">://</span><span class="n">registry</span><span class="p">.</span><span class="n">npmmirror</span><span class="p">.</span><span class="n">com</span>
+</code></pre></div>
+<h3 id="linuxubuntu-debianbash">Linux（Ubuntu / Debian，Bash）<a class="headerlink" href="#linuxubuntu-debianbash" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>opencode-ai
+</code></pre></div>
+<p>如果已经将 npm 镜像设置为默认源，也可以省略 <code>--registry</code> 参数。</p>
+<div class="admonition note">
+<p class="admonition-title">其他安装方式</p>
+<p>OpenCode 也提供 Windows 的 Scoop、Chocolatey 安装方式，以及 macOS/Linux 的安装脚本和 Homebrew 安装方式。课程环境推荐使用 npm，便于与其他工具保持一致。</p>
 </div>
-<p>本篇文档介绍后端代码生成中栈式分配的核心思想及实验方案，我们假设你已经阅读了<a href="../../common/asm_intro/">龙芯汇编介绍</a>章节，并基本了解了龙芯的寄存器、汇编指令、调用规范等。</p>
-<h2 id="核心思想">核心思想<a class="headerlink" href="#核心思想" title="Permanent link">&para;</a></h2>
-<p>栈式分配，是指<strong>程序的所有变量都保存在栈上</strong>，只在参与计算时提取到寄存器中。</p>
-<p>在栈式分配策略下，编译器后端主要分为两个步骤：</p>
-<ol>
-<li>
-<p><strong>变量分配</strong>：为程序中的每个变量分配一个栈帧位置，即相对栈指针的一个偏移量</p>
-</li>
-<li>
-<p><strong>指令选择</strong>：对于指令 <span class="arithmatex">\(u= v_1 \ op\ v_2\)</span></p>
-</li>
-<li>将两个操作数（<span class="arithmatex">\(v_1\)</span> 和 <span class="arithmatex">\(v_2\)</span>）对应的数据分别从栈上提取到寄存器中（load）</li>
-<li>根据指令类型选择合适的汇编指令（可能有多条）</li>
-<li>将计算结果存储到栈上（store）</li>
-</ol>
-<p>而在寄存器分配策略下，变量活跃期间数据都保留在各自的寄存器中，不需要 2.a 的 load 和 2.c 的 store。所以性能上，栈式分配不如寄存器分配，而在实现难度上，栈式分配要简单许多。</p>
-<h2 id="实验方案">实验方案<a class="headerlink" href="#实验方案" title="Permanent link">&para;</a></h2>
-<p>关于变量分配，我们需要为函数中每个变量分配一段栈空间，这个并没有固定的标准，我们提供并已经为你实现好的方案如下：</p>
+<h2 id="验证安装">验证安装<a class="headerlink" href="#验证安装" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>opencode<span class="w"> </span>--version
+</code></pre></div>
+<p>如果系统提示找不到 <code>opencode</code> 命令，请关闭并重新打开终端，使新的 PATH 配置生效。</p>
+<h2 id="首次启动与模型配置">首次启动与模型配置<a class="headerlink" href="#首次启动与模型配置" title="Permanent link">&para;</a></h2>
+<p>进入代码项目目录后启动 OpenCode：</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>your-project
+opencode
+</code></pre></div>
+<p>在交互界面中输入以下命令配置模型提供商：</p>
+<div class="highlight"><pre><span></span><code>/connect
+</code></pre></div>
+<p>按照界面提示选择提供商并填写对应的 API key。OpenCode 支持多个模型提供商；首次使用时也可以选择 OpenCode Zen 提供的模型。</p>
+<p>若使用 DeepSeek 官方的 <a href="https://www.deepseek.com/news/deepseek-v4-1-flash/">V4.1 Flash</a> API，可创建或修改全局配置文件 <code>$HOME/.config/opencode/opencode.jsonc</code>：</p>
+<div class="highlight"><pre><span></span><code>{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "deepseek/deepseek-flash",
+  "small_model": "deepseek/deepseek-flash",
+  "provider": {
+    "deepseek": {
+      "options": {
+        "apiKey": "你的 DeepSeek API Key"
+      }
+    }
+  }
+}
+</code></pre></div>
+<h2 id="更新">更新<a class="headerlink" href="#更新" title="Permanent link">&para;</a></h2>
+<p>使用 npm 安装时，可以执行：</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>opencode-ai@latest
+</code></pre></div>
+<p>若需要使用镜像站，在命令末尾追加：</p>
+<div class="highlight"><pre><span></span><code>--registry<span class="o">=</span>https://registry.npmmirror.com
+</code></pre></div>
+<h2 id="官方资料">官方资料<a class="headerlink" href="#官方资料" title="Permanent link">&para;</a></h2>
 <ul>
-<li>记录每个变量相对于栈底 <code>$fp</code> 的偏移，由于栈从高向低生长，所以这个偏移量为负数</li>
-<li>固定备份两个寄存器：<code>$ra</code> 和 <code>$fp</code></li>
-<li>备份函数参数</li>
-<li>为每个存在定值的指令分配相应的空间（即 <code>ir</code> 中的 <code>%opN</code> 等）</li>
-<li>对于 <code>alloca</code> 指令，<code>alloca</code> 本身的定值为指针类型，<code>alloca</code> 的空间紧挨着这个这个指针，在更靠近栈顶的位置</li>
+<li><a href="https://opencode.ai/docs">OpenCode 官方文档</a></li>
+<li><a href="https://github.com/anomalyco/opencode">OpenCode 官方仓库</a></li>
+<li><a href="https://opencode.ai/docs/providers">OpenCode 模型提供商配置</a></li>
 </ul>
-<p>即我们的栈帧结构如下：</p>
-<p><a class="glightbox" href="../figs/stack-frame.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="" src="../figs/stack-frame.png" /></a></p>
-<div class="admonition note">
-<p class="admonition-title">注意</p>
-<p>为变量分配空间，实际上就是移动栈指针，这里注意 <code>$sp</code> 和 <code>$fp</code> 需要<strong>对齐到 16 字节</strong>，详见<a href="../../common/asm_intro/#栈帧布局">汇编介绍中的栈帧布局章节</a>。</p>
-<p>当为 <code>i1</code> 条件变量分配内存时，一般是为其分配一个 <code>i32</code> 1 字节空间，而非只占一个比特。</p>
-</div>
-<div class="admonition note">
-<p class="admonition-title">代码</p>
-<p>查阅框架中的代码实现：<code>src/codegen/CodeGen.cpp</code> 中 <code>CodeGen::allocate()</code></p>
-</div>
-<h2 id="举个例子">举个例子<a class="headerlink" href="#举个例子" title="Permanent link">&para;</a></h2>
-<p>例如如下的 Cminusf 程序：</p>
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
-<span class="w">    </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">;</span>
-<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>生成的 IR 文件（部分）如下：</p>
-<div class="highlight"><pre><span></span><code><span class="n">define</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="err">@</span><span class="n">main</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
-<span class="nl">label_entry</span><span class="p">:</span>
-<span class="w">  </span><span class="o">%</span><span class="n">op0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">alloca</span><span class="w"> </span><span class="n">i32</span>
-<span class="w">  </span><span class="n">store</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">op0</span>
-<span class="w">  </span><span class="o">%</span><span class="n">op1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">load</span><span class="w"> </span><span class="n">i32</span><span class="p">,</span><span class="w"> </span><span class="n">i32</span><span class="o">*</span><span class="w"> </span><span class="o">%</span><span class="n">op0</span>
-<span class="w">  </span><span class="n">ret</span><span class="w"> </span><span class="n">i32</span><span class="w"> </span><span class="o">%</span><span class="n">op1</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>在栈式分配策略下：</p>
-<ol>
-<li>变量分配：为 <code>alloca</code> 指令分配一个 <code>i32</code> 类型的空间，为 <code>%op0</code> 和 <code>%op1</code> 分配栈帧空间。算上备份的寄存器，汇编代码中 <code>main</code> 函数的栈帧如下：</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th style="text-align: center;">栈帧内容</th>
-<th style="text-align: center;">宽度 (byte)</th>
-<th style="text-align: center;">栈帧位置（相对 <code>$fp</code> 的偏移）</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: center;"><code>$ra</code></td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">-8</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>$fp</code></td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">-16</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>i32* %op0</code></td>
-<td style="text-align: center;">8</td>
-<td style="text-align: center;">-24</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>alloca</code> 出的 <code>i32</code> 空间</td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-28</td>
-</tr>
-<tr>
-<td style="text-align: center;"><code>i32 %op1</code></td>
-<td style="text-align: center;">4</td>
-<td style="text-align: center;">-32</td>
-</tr>
-</tbody>
-</table>
-<ol>
-<li>指令选择：以 IR 中第 5 行的 <code>%op1 = load i32, i32* %op0</code> 为例，首先需要将 <code>%op0</code> 的值从栈帧加载到寄存器中，然后使用汇编指令 <code>ld.w</code> 读取内存，结果即为 <code>%op1</code> 的值，最后将其保存回 <code>%op1</code> 所在的栈帧位置。</li>
-</ol>
-<p>得到的汇编指令如下（建议你读懂数字的来由）：</p>
-<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="na">.text</span>
-<span class="w">    </span><span class="na">.globl</span><span class="w"> </span><span class="no">main</span>
-<span class="w">    </span><span class="na">.type</span><span class="w"> </span><span class="no">main</span><span class="p">,</span><span class="w"> </span><span class="na">@function</span>
-<span class="nl">main:</span>
-<span class="w">    </span><span class="c1"># prologue</span>
-<span class="w">    </span><span class="nf">st.d</span><span class="w"> </span><span class="no">$ra</span><span class="p">,</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="mi">-8</span>
-<span class="w">    </span><span class="nf">st.d</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="mi">-16</span>
-<span class="w">    </span><span class="nf">addi.d</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span>
-<span class="w">    </span><span class="nf">addi.d</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="mi">-32</span>
-<span class="nl">.main_label_entry:</span>
-<span class="w">    </span><span class="c1"># %op0 = alloca i32</span>
-<span class="w">    </span><span class="nf">addi.d</span><span class="w"> </span><span class="no">$t0</span><span class="p">,</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="mi">-28</span>
-<span class="w">    </span><span class="nf">st.d</span><span class="w"> </span><span class="no">$t0</span><span class="p">,</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="mi">-24</span>
-<span class="w">    </span><span class="c1"># store i32 1, i32* %op0</span>
-<span class="w">    </span><span class="nf">ld.d</span><span class="w"> </span><span class="no">$t0</span><span class="p">,</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="mi">-24</span>
-<span class="w">    </span><span class="nf">addi.w</span><span class="w"> </span><span class="no">$t1</span><span class="p">,</span><span class="w"> </span><span class="no">$zero</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span>
-<span class="w">    </span><span class="nf">st.w</span><span class="w"> </span><span class="no">$t1</span><span class="p">,</span><span class="w"> </span><span class="no">$t0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span>
-<span class="w">    </span><span class="c1"># %op1 = load i32, i32* %op0    &lt;-- 刚刚详细介绍过的指令</span>
-<span class="w">    </span><span class="nf">ld.d</span><span class="w"> </span><span class="no">$t0</span><span class="p">,</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="mi">-24</span>
-<span class="w">    </span><span class="nf">ld.w</span><span class="w"> </span><span class="no">$t0</span><span class="p">,</span><span class="w"> </span><span class="no">$t0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span>
-<span class="w">    </span><span class="nf">st.w</span><span class="w"> </span><span class="no">$t0</span><span class="p">,</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="mi">-32</span>
-<span class="w">    </span><span class="c1"># ret i32 %op1</span>
-<span class="w">    </span><span class="nf">ld.w</span><span class="w"> </span><span class="no">$a0</span><span class="p">,</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="mi">-32</span>
-<span class="w">    </span><span class="nf">b</span><span class="w"> </span><span class="no">main_exit</span>
-<span class="nl">main_exit:</span>
-<span class="w">    </span><span class="c1"># epilogue</span>
-<span class="w">    </span><span class="nf">addi.d</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="mi">32</span>
-<span class="w">    </span><span class="nf">ld.d</span><span class="w"> </span><span class="no">$ra</span><span class="p">,</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="mi">-8</span>
-<span class="w">    </span><span class="nf">ld.d</span><span class="w"> </span><span class="no">$fp</span><span class="p">,</span><span class="w"> </span><span class="no">$sp</span><span class="p">,</span><span class="w"> </span><span class="mi">-16</span>
-<span class="w">    </span><span class="nf">jr</span><span class="w"> </span><span class="no">$ra</span>
-</code></pre></div>
          
     
 <aside class="md-source-file">
@@ -746,18 +829,17 @@
   <span class="md-icon" title="最后更新">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
   </span>
-  <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2025</span>
+  <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2026</span>
 </span>
      
 <span class="md-source-file__fact">
   <span class="md-icon" title="贡献者">
-     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 5.5A3.5 3.5 0 0 1 15.5 9a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 8.5 9 3.5 3.5 0 0 1 12 5.5M5 8c.56 0 1.08.15 1.53.42-.15 1.43.27 2.85 1.13 3.96C7.16 13.34 6.16 14 5 14a3 3 0 0 1-3-3 3 3 0 0 1 3-3m14 0a3 3 0 0 1 3 3 3 3 0 0 1-3 3c-1.16 0-2.16-.66-2.66-1.62a5.54 5.54 0 0 0 1.13-3.96c.45-.27.97-.42 1.53-.42M5.5 18.25c0-2.07 2.91-3.75 6.5-3.75s6.5 1.68 6.5 3.75V20h-13zM0 20v-1.5c0-1.39 1.89-2.56 4.45-2.9-.59.68-.95 1.62-.95 2.65V20zm24 0h-3.5v-1.75c0-1.03-.36-1.97-.95-2.65 2.56.34 4.45 1.51 4.45 2.9z"/></svg> 
+     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+    
   </span>
   <nav>
     
-    <a href="mailto:153092435+terialion@users.noreply.github.com">WangYuhang</a>,
-    
-    <a href="mailto:ylc221606@mail.ustc.edu.cn">Yang00002</a>
+    <a href="mailto:ack@mail.ustc.edu.cn">T2026103582011170</a>
   </nav>
 </span>
   
@@ -779,6 +861,28 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../codex/" class="md-footer__link md-footer__link--prev" aria-label="上一页: Codex">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                Codex
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
