@@ -793,10 +793,13 @@
 <p>可用镜像站：</p>
 <div class="highlight"><pre><span></span><code><span class="n">npm</span> <span class="n">install</span> <span class="n">-g</span> <span class="nv">@anthropic</span><span class="n">-ai</span><span class="p">/</span><span class="n">claude-code</span> <span class="p">-</span><span class="n">-registry</span><span class="p">=</span><span class="n">https</span><span class="p">://</span><span class="n">registry</span><span class="p">.</span><span class="n">npmmirror</span><span class="p">.</span><span class="n">com</span>
 </code></pre></div>
-<p>如果已经将 npm 镜像设置为默认源，也可以省略 <code>--registry</code> 参数。</p>
 <h3 id="linuxubuntu-debianbash">Linux（Ubuntu / Debian，Bash）<a class="headerlink" href="#linuxubuntu-debianbash" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
 </code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Linux 全局安装权限</p>
+<p>若命令提示 <code>EACCES</code> 或权限不足，在 npm 全局安装或更新命令前加 <code>sudo</code>，例如 <code>sudo npm install -g @anthropic-ai/claude-code</code>。</p>
+</div>
 <h2 id="验证安装">验证安装<a class="headerlink" href="#验证安装" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>claude<span class="w"> </span>--version
 claude<span class="w"> </span>doctor
@@ -809,12 +812,12 @@ claude
 </code></pre></div>
 <p>首次启动时按照浏览器提示完成登录。可用的登录方式和账户要求以 Claude Code 当前官方说明为准。</p>
 <p>也可以使用 API key。下面的设置只对当前终端会话生效：</p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">PowerShell</label><div class="tabbed-content">
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Windows PowerShell</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nv">$env:ANTHROPIC_API_KEY</span> <span class="p">=</span> <span class="s2">"你的 Anthropic API Key"</span>
 <span class="n">claude</span>
 </code></pre></div>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Bash</label><div class="tabbed-content">
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Linux Bash</label><div class="tabbed-content">
 <div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span><span class="s1">'你的 Anthropic API Key'</span>
 claude
 </code></pre></div>
@@ -838,8 +841,10 @@ claude
 <p><code>$HOME</code> 表示当前用户的主目录：Linux 中通常为 <code>/home/&lt;用户名&gt;</code>；PowerShell 中通常为 <code>C:\Users\&lt;用户名&gt;</code>。修改完成后重新启动 Claude Code，使配置生效。</p>
 <h2 id="更新">更新<a class="headerlink" href="#更新" title="Permanent link">&para;</a></h2>
 <p>使用 npm 安装时，可以执行：</p>
-<div class="highlight"><pre><span></span><code><span class="c1"># 也可用镜像站</span>
-npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code@latest
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code@latest
+</code></pre></div>
+<p>使用镜像站更新：</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code@latest<span class="w"> </span>--registry<span class="o">=</span>https://registry.npmmirror.com
 </code></pre></div>
 <p>Windows PowerShell 和 Linux Bash 使用相同的 npm 命令。</p>
 <h2 id="官方资料">官方资料<a class="headerlink" href="#官方资料" title="Permanent link">&para;</a></h2>

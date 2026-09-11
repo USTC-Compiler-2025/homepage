@@ -776,7 +776,10 @@
 <h3 id="linuxubuntu-debianbash">Linux（Ubuntu / Debian，Bash）<a class="headerlink" href="#linuxubuntu-debianbash" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>opencode-ai
 </code></pre></div>
-<p>如果已经将 npm 镜像设置为默认源，也可以省略 <code>--registry</code> 参数。</p>
+<div class="admonition note">
+<p class="admonition-title">Linux 全局安装权限</p>
+<p>若命令提示 <code>EACCES</code> 或权限不足，在 npm 全局安装或更新命令前加 <code>sudo</code>，例如 <code>sudo npm install -g opencode-ai</code>。</p>
+</div>
 <div class="admonition note">
 <p class="admonition-title">其他安装方式</p>
 <p>OpenCode 也提供 Windows 的 Scoop、Chocolatey 安装方式，以及 macOS/Linux 的安装脚本和 Homebrew 安装方式。课程环境推荐使用 npm，便于与其他工具保持一致。</p>
@@ -812,8 +815,8 @@ opencode
 <p>使用 npm 安装时，可以执行：</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>opencode-ai@latest
 </code></pre></div>
-<p>若需要使用镜像站，在命令末尾追加：</p>
-<div class="highlight"><pre><span></span><code>--registry<span class="o">=</span>https://registry.npmmirror.com
+<p>使用镜像站更新：</p>
+<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>opencode-ai@latest<span class="w"> </span>--registry<span class="o">=</span>https://registry.npmmirror.com
 </code></pre></div>
 <h2 id="官方资料">官方资料<a class="headerlink" href="#官方资料" title="Permanent link">&para;</a></h2>
 <ul>

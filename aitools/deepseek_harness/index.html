@@ -825,13 +825,10 @@ npx<span class="w"> </span>--version
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>your-project
 npx<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web
 </code></pre></div>
-<p>首次运行时，<code>npx</code> 会下载并启动 dsh。启动成功后，终端会输出本地访问地址；默认地址为 <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>，并会尝试在浏览器中打开它。</p>
+<p>首次运行时，<code>npx</code> 会下载并启动 dsh。启动成功后，终端会输出带一次性认证 token 的完整本地访问地址，并会尝试在浏览器中打开它。若需要手动打开页面，必须使用终端输出的完整 URL，而不是裸的 <a href="http://127.0.0.1:3080">http://127.0.0.1:3080</a>。</p>
 <h3 id="使用-npm-镜像站">使用 npm 镜像站<a class="headerlink" href="#使用-npm-镜像站" title="Permanent link">&para;</a></h3>
 <p>默认情况下，<code>npx</code> 从 npm 官方源下载 dsh。如果下载较慢，可以临时使用镜像站：</p>
 <div class="highlight"><pre><span></span><code>npx<span class="w"> </span>--registry<span class="o">=</span>https://registry.npmmirror.com<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web
-</code></pre></div>
-<p>也可以按照 <a href="../npm/#可选使用-npm-镜像站">npm 环境配置</a> 将镜像站设为默认源，此后仍使用普通命令即可：</p>
-<div class="highlight"><pre><span></span><code>npx<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web
 </code></pre></div>
 <p>若只希望启动服务、不自动打开浏览器，可以使用：</p>
 <div class="highlight"><pre><span></span><code>npx<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web<span class="w"> </span>--no-open

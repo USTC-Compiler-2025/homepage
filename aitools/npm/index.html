@@ -730,19 +730,24 @@
 
 
 <h1 id="npm-环境配置">npm 环境配置<a class="headerlink" href="#npm-环境配置" title="Permanent link">&para;</a></h1>
-<p>npm（Node Package Manager）是 Node.js 的包管理器，用于下载、安装和更新 JavaScript/Node.js 软件包。本组文档通过 npx 启动 DeepSeek Harness，并使用 npm 安装 Claude Code 和 Codex CLI，因此需要先准备 Node.js 与 npm 环境。</p>
-<p>本文介绍 Node.js 和 npm 的安装，以及使用 npm 安装 AI 工具的方法。DeepSeek Harness、Claude Code 和 Codex 的具体说明分别见<a href="../deepseek_harness/">DeepSeek Harness</a>、<a href="../claude/">Claude Code</a>和<a href="../codex/">Codex</a>。</p>
+<p>npm（Node Package Manager）是 Node.js 的包管理器，用于下载、安装和更新 JavaScript/Node.js 软件包。本组文档通过 npx 启动 DeepSeek Harness，并使用 npm 安装 Claude Code、Codex CLI 和 OpenCode，因此需要先准备 Node.js 与 npm 环境。</p>
+<p>本文介绍 Node.js 和 npm 的安装，以及使用 npm 安装 AI 工具的方法。DeepSeek Harness、Claude Code、Codex 和 OpenCode 的具体说明分别见<a href="../deepseek_harness/">DeepSeek Harness</a>、<a href="../claude/">Claude Code</a>、<a href="../codex/">Codex</a>和<a href="../opencode/">OpenCode</a>。</p>
 <h2 id="npm-包管理器的好处">npm 包管理器的好处<a class="headerlink" href="#npm-包管理器的好处" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>跨平台</strong>：Windows 和 Linux 使用相同的安装命令。</li>
 <li><strong>自动处理依赖</strong>：无需手动下载和配置相关组件。</li>
 <li><strong>方便管理</strong>：支持版本更新和镜像源配置。</li>
 </ul>
-<p>例如，DeepSeek Harness 可使用 npx 直接启动；Claude Code 和 Codex 可使用 npm 全局安装：</p>
+<p>例如，DeepSeek Harness 可使用 npx 直接启动；Claude Code、Codex 和 OpenCode 可使用 npm 全局安装：</p>
 <div class="highlight"><pre><span></span><code>npx<span class="w"> </span>@deepseek-ai/dsh<span class="w"> </span>web
 npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@anthropic-ai/claude-code
 npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>@openai/codex
+npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>opencode-ai
 </code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Linux 全局安装权限</p>
+<p>使用 apt 或 NodeSource 安装 Node.js 时，<code>npm install -g</code> 可能提示 <code>EACCES</code> 或权限不足。此时在 npm 全局安装或更新命令前加 <code>sudo</code>，例如 <code>sudo npm install -g @openai/codex</code>。Windows 不需要 <code>sudo</code>；使用 <code>npx</code> 启动 DeepSeek Harness 通常也不需要。</p>
+</div>
 <h2 id="安装-nodejs-lts">安装 Node.js LTS<a class="headerlink" href="#安装-nodejs-lts" title="Permanent link">&para;</a></h2>
 <h3 id="windows">Windows<a class="headerlink" href="#windows" title="Permanent link">&para;</a></h3>
 <p>在普通 PowerShell 或 Windows Terminal 中执行：</p>
@@ -754,11 +759,11 @@ npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </s
 </code></pre></div>
 <p>如果系统没有 <code>winget</code>，可以从 <a href="https://nodejs.org/en/download">Node.js 官方下载页</a>下载并安装标记为 <strong>LTS</strong> 的 Windows Installer。安装时请保留“Add to PATH”选项。</p>
 <h3 id="linuxubuntu-debian">Linux（Ubuntu / Debian）<a class="headerlink" href="#linuxubuntu-debian" title="Permanent link">&para;</a></h3>
-<p>以下命令以 Bash 为例，需要具有管理员权限：</p>
-<div class="highlight"><pre><span></span><code>apt-get<span class="w"> </span>update
-apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>curl<span class="w"> </span>ca-certificates
-curl<span class="w"> </span>-fsSL<span class="w"> </span>https://deb.nodesource.com/setup_22.x<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash<span class="w"> </span>-
-apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>nodejs
+<p>以下命令以 Bash 为例，普通用户需要具有 <code>sudo</code> 权限：</p>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>curl<span class="w"> </span>ca-certificates
+curl<span class="w"> </span>-fsSL<span class="w"> </span>https://deb.nodesource.com/setup_22.x<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>-E<span class="w"> </span>bash<span class="w"> </span>-
+sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>-y<span class="w"> </span>nodejs
 </code></pre></div>
 <p>安装完成后检查版本：</p>
 <div class="highlight"><pre><span></span><code>node<span class="w"> </span>--version
@@ -769,16 +774,9 @@ npm<span class="w"> </span>--version
 <p>临时使用镜像站：</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>&lt;package-name&gt;<span class="w"> </span>--registry<span class="o">=</span>https://registry.npmmirror.com
 </code></pre></div>
-<p>也可以将镜像站设置为默认源：</p>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>config<span class="w"> </span><span class="nb">set</span><span class="w"> </span>registry<span class="w"> </span>https://registry.npmmirror.com
-npm<span class="w"> </span>config<span class="w"> </span>get<span class="w"> </span>registry
-</code></pre></div>
-<p>恢复 npm 官方源：</p>
-<div class="highlight"><pre><span></span><code>npm<span class="w"> </span>config<span class="w"> </span><span class="nb">set</span><span class="w"> </span>registry<span class="w"> </span>https://registry.npmjs.org
-</code></pre></div>
 <div class="admonition warning">
 <p class="admonition-title">镜像源的作用范围</p>
-<p>npm 镜像只影响安装和更新时的包下载。工具安装完成后，登录和运行仍需要能够访问 OpenAI 或 Anthropic 的服务。</p>
+<p>npm 镜像只影响安装和更新时的包下载。工具安装完成后，登录和运行仍需要能够访问所选模型提供商的服务。</p>
 </div>
          
     
@@ -788,7 +786,7 @@ npm<span class="w"> </span>config<span class="w"> </span>get<span class="w"> </s
   <span class="md-icon" title="最后更新">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
   </span>
-  <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 10, 2026</span>
+  <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2026</span>
 </span>
     
 <span class="md-source-file__fact">
